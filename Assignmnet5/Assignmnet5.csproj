@@ -129,6 +129,8 @@
     <None Include="Resources\Happy1.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="boo.wav" />
+    <None Include="cheer.wav" />
     <Content Include="Resources\boo.wav" />
     <Content Include="Resources\cheer.wav" />
   </ItemGroup>

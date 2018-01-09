@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Media;
 using System.Reflection;
@@ -48,16 +49,24 @@ namespace Assignmnet5
                 {
                     label4.Text = "Study Harder";
                     this.BackgroundImage = global::Assignmnet5.Properties.Resources.Sad;
+                    /*
                     SoundPlayer simpleSound = new SoundPlayer("boo.wav");
-                    simpleSound.Play();
+                    simpleSound.Play();*/
+                    SoundPlayer audio = new SoundPlayer(global::Assignmnet5.Properties.Resources.boo); // here WindowsFormsApplication1 is the namespace and Connect is the audio file name
+                    audio.Play();
+
+
+
 
                 }
                 if (info.Correct > 7)
                 {
                     label4.Text = "Good Job!";
                     this.BackgroundImage = global::Assignmnet5.Properties.Resources.Happy;
-                    SoundPlayer simpleSound = new SoundPlayer("cheer.wav");
-                    simpleSound.Play();
+                    /*SoundPlayer simpleSound = new SoundPlayer("cheer.wav");
+                    simpleSound.Play();*/
+                    SoundPlayer audio = new SoundPlayer(global::Assignmnet5.Properties.Resources.cheer);
+                    audio.Play();
                 }
             }
             catch(Exception ex)
